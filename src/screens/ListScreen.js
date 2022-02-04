@@ -29,7 +29,7 @@ const ListScreen = () => {
             renderItem={({ item }) => {
                 // (element) => {item: {name: ...}, index: 0} ...
                 // use destructuring to get the "item" of element
-                return <Text style={styles.textStyle}>Name: {item.name} - Age {item.age}</Text>
+                return <Text style={styles.textStyle}>{item.name} - Age {item.age}</Text>
             }}>
         </FlatList>
     )

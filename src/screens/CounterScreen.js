@@ -9,11 +9,9 @@ const CounterScreen = () => {
             <Text style={styles.textStyle}>Count: {counter}</Text>
             <View style={{ flexDirection: "row" }}>
                 <Button onPress={() => {
-                    console.log(`addButton pressed || currentCount: ${counter}`);
                     setCounter(counter + 1);
                 }} title="Add"></Button>
                 <Button onPress={() => {
-                    console.log(`decraseButton pressed || currentCount: ${counter}`);
                     setCounter(counter - 1);
                 }} title="Decrease"></Button>
             </View>
